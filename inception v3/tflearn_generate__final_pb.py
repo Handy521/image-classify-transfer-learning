@@ -73,7 +73,7 @@ def main():
     # 读取所有图片。
     n_classes = 5
     graph, bottleneck_tensor, jpeg_data_tensor, resized_image_tensor = create_inception_graph()
-
+    #合并成一个pb文件——with-default
     bottleneck_input = tf.placeholder_with_default(bottleneck_tensor, shape=[None, BOTTLENECK_TENSOR_SIZE], name='BottleneckInputPlaceholder')
 
     # 定义新的标准答案输入
