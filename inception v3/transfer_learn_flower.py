@@ -24,9 +24,6 @@ BOTTLENECK_TENSOR_NAME = 'pool_3/_reshape:0'
 # 图像输入张量所对应的名称。
 JPEG_DATA_TENSOR_NAME = 'DecodeJpeg/contents:0'
 
-# 下载的谷歌训练好的Inception-v3模型文件目录
-#MODEL_DIR = 'model/'
-
 # 下载的谷歌训练好的Inception-v3模型文件名
 MODEL_FILE = 'tensorflow_inception_graph.pb'
 
