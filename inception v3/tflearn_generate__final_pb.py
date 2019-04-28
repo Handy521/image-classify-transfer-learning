@@ -25,9 +25,6 @@ BOTTLENECK_TENSOR_NAME = 'pool_3/_reshape:0'
 JPEG_DATA_TENSOR_NAME = 'DecodeJpeg/contents:0'
 RESIZED_INPUT_TENSOR_NAME = 'ResizeBilinear:0'
 
-# 下载的谷歌训练好的Inception-v3模型文件目录
-#MODEL_DIR = 'model/'
-
 # 下载的谷歌训练好的Inception-v3模型文件名
 MODEL_FILE = 'tensorflow_inception_graph.pb'
 
@@ -49,7 +46,6 @@ BATCH = 1
 #LEARNING_RATE = 0.008
 #STEPS = 8000
 #BATCH = 100
-
 
 def create_inception_graph():
     """"Creates a graph from saved GraphDef file and returns a Graph object.
